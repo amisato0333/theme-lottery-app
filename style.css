@@ -1,0 +1,638 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.add-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#themeInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addButton {
+  background-color: white;
+}
+
+#drawButton {
+  padding: 14px 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#result {
+  min-height: 50px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.list-area {
+  margin-top: 40px;
+  text-align: left;
+}
+
+#themeList {
+  padding-left: 20px;
+}
+
+#themeList li {
+  display: grid;
+  grid-template-columns: 25px 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#themeList li span {
+  text-align: left;
+}
+
+#themeList li button {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+#multiDrawButton {
+  margin-top: 10px;
+}
+
+#multiResult {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.category-tab {
+  padding: 8px 14px;
+}
+
+.search-area {
+  margin: 15px 0;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 220px;
+  font-size: 14px;
+}
+
+#themeList .subcategory-title {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 24px;
+  padding: 8px 0;
+  border-bottom: 2px solid #aaa;
+}
+
+#result {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.result-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.result-category {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+
+.result-theme {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lock-button {
+  margin-top: 12px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.result-card.locked {
+  border: 2px solid #aaa;
+}
+
+/* =========================
+   全体デザイン
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans JP",
+    sans-serif;
+
+  background: #f6f7f9;
+  color: #25282d;
+}
+
+.container {
+  width: 90%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+
+
+/* =========================
+   タイトル
+========================= */
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   管理画面へのリンク
+========================= */
+
+a {
+  color: #53627c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   カテゴリ選択
+========================= */
+
+.category-checks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin: 18px 0 25px;
+}
+
+.category-checks label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 14px;
+
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.category-checks input {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================
+   抽選ボタン
+========================= */
+
+#drawButton {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #53627c;
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s,
+    opacity 0.15s;
+}
+
+#drawButton:hover {
+  opacity: 0.9;
+}
+
+#drawButton:active {
+  transform: scale(0.99);
+}
+
+
+/* =========================
+   結果
+========================= */
+
+#result {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+  margin-top: 25px;
+
+  min-height: 0;
+  font-size: initial;
+  font-weight: normal;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 145px;
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+
+  text-align: left;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.result-category {
+  margin-bottom: 8px;
+
+  color: #777f8c;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.result-theme {
+  flex: 1;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   固定ボタン
+========================= */
+
+.lock-button {
+  align-self: flex-start;
+
+  margin-top: 14px;
+  padding: 7px 10px;
+
+  background: #f0f2f5;
+  color: #4d5560;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.result-card.locked {
+  border: 2px solid #53627c;
+}
+
+
+/* =========================
+   スマホ
+========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 92%;
+    padding-top: 25px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  .category-checks {
+    gap: 8px;
+  }
+
+  .category-checks label {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  #result {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    min-height: 125px;
+    padding: 16px;
+  }
+
+  .result-theme {
+    font-size: 19px;
+  }
+}
+
+/* =========================
+   管理画面
+========================= */
+
+.add-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+#categorySelect,
+#subcategorySelect,
+#themeInput,
+#sortSelect,
+#searchInput {
+  width: 100%;
+  padding: 10px 12px;
+
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #25282d;
+
+  font-size: 14px;
+}
+
+#categorySelect,
+#subcategorySelect,
+#themeInput {
+  min-height: 42px;
+}
+
+#addButton {
+  min-height: 42px;
+
+  background: #53627c;
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   カテゴリタブ
+========================= */
+
+.category-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+
+  margin: 20px 0;
+}
+
+.category-tab {
+  padding: 11px 8px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+
+  color: #4d5560;
+  font-size: 14px;
+}
+
+.category-tab.active {
+  background: #53627c;
+  color: #ffffff;
+  border-color: #53627c;
+  font-weight: 600;
+}
+
+
+/* =========================
+   検索・並び替え
+========================= */
+
+.search-area,
+.sort-area {
+  margin: 14px 0;
+}
+
+.search-area label,
+.sort-area label {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 13px;
+  color: #727985;
+}
+
+
+/* =========================
+   全選択・解除
+========================= */
+
+.select-buttons {
+  display: flex;
+  gap: 8px;
+
+  margin: 15px 0;
+}
+
+.select-buttons button {
+  flex: 1;
+
+  background: #eef1f4;
+  color: #4d5560;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   お題一覧
+========================= */
+
+#themeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#themeList li:not(.subcategory-title) {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 10px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eceff2;
+}
+
+#themeList li:not(.subcategory-title):first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+#themeList li span {
+  text-align: left;
+}
+
+#themeList li button {
+  padding: 6px 10px;
+
+  background: #eef1f4;
+  color: #555d68;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   小分類見出し
+========================= */
+
+#themeList .subcategory-title {
+  display: block;
+
+  margin-top: 26px;
+  padding: 8px 4px;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid #d5d9df;
+
+  color: #4f5865;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   管理画面 スマホ
+========================= */
+
+@media (max-width: 600px) {
+
+  .add-area {
+    grid-template-columns: 1fr;
+  }
+
+  #categorySelect,
+  #subcategorySelect,
+  #themeInput,
+  #addButton {
+    width: 100%;
+  }
+
+  .category-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .select-buttons {
+    flex-direction: column;
+  }
+
+  #themeList li:not(.subcategory-title) {
+    padding: 12px 8px;
+  }
+
+  #themeList li button {
+    padding: 6px 8px;
+  }
+}
+
+#unlockAllButton {
+  display: block;
+
+  margin: 16px auto 0;
+  padding: 9px 14px;
+
+  background: transparent;
+  color: #687180;
+
+  border: 1px solid #d5d9df;
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+#unlockAllButton:hover {
+  background: #eef1f4;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お題くじ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icons/icon-192.png">
+
+    <meta name="theme-color" content="#53627c">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>お題くじ</h1>
+        <a href="manage.html">お題を管理する</a>
+
+        <section class="draw-area">
+
+            <h2>今回くじに入れるカテゴリ</h2>
+
+            <div class="category-checks">
+
+                <label>
+                    <input type="checkbox" class="draw-category" value="fashion" checked>
+                    服ジャンル
+                </label>
+
+                <label>
+                    <input type="checkbox" class="draw-category" value="world" checked>
+                    世界観
+                </label>
+
+                <label>
+                    <input type="checkbox" class="draw-category" value="motif" checked>
+                    モチーフ
+                </label>
+
+                <label>
+                    <input type="checkbox" class="draw-category" value="rule">
+                    追加縛り
+                </label>
+
+            </div>
+
+            <button id="drawButton">お題を引く</button>
+
+            <div id="result">
+                ここに結果が出ます
+            </div>
+
+            <button id="unlockAllButton">
+                固定をすべて解除
+            </button>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

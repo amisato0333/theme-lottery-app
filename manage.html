@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お題管理</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>お題管理</h1>
+
+    <a href="index.html">くじ画面に戻る</a>
+
+    <section class="add-area">
+
+      <select id="categorySelect">
+        <option value="fashion">服ジャンル</option>
+        <option value="world">世界観</option>
+        <option value="motif">モチーフ</option>
+        <option value="rule">追加縛り</option>
+      </select>
+
+      <select id="subcategorySelect">
+        <option value="">小分類を選択</option>
+        <input type="text" id="newSubcategoryInput" placeholder="新しい小分類を入力" style="display: none;">
+      </select>
+
+      <input type="text" id="themeInput" placeholder="お題を入力">
+
+      <button id="addButton">追加</button>
+
+    </section>
+
+    <section class="list-area">
+      <h2>登録したお題</h2>
+
+      <div class="category-tabs">
+        <button class="category-tab" data-category="fashion">
+          服ジャンル
+        </button>
+
+        <button class="category-tab" data-category="world">
+          世界観
+        </button>
+
+        <button class="category-tab" data-category="motif">
+          モチーフ
+        </button>
+
+        <button class="category-tab" data-category="rule">
+          追加縛り
+        </button>
+      </div>
+
+      <div class="select-buttons">
+        <button id="selectAllButton">すべて選択</button>
+        <button id="deselectAllButton">すべて解除</button>
+      </div>
+
+      <div class="sort-area">
+        <label for="sortSelect">並び順：</label>
+
+        <select id="sortSelect">
+          <option value="default">ジャンル順</option>
+          <option value="name">50音順</option>
+        </select>
+      </div>
+
+      <div class="search-area">
+        <label for="searchInput">お題を検索：</label>
+
+        <input type="text" id="searchInput" placeholder="例：ゴシック">
+      </div>
+
+      <ul id="themeList"></ul>
+
+    </section>
+
+  </main>
+
+  <script src="manage.js"></script>
+
+</body>
+
+</html>
