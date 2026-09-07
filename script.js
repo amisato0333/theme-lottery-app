@@ -64,6 +64,8 @@ drawButton.addEventListener("click", function () {
 
   result.innerHTML = "";
 
+  result.classList.toggle("four-results", results.length === 4);
+
   results.forEach(function (item) {
 
     const card = document.createElement("div");

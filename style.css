@@ -636,3 +636,153 @@ a:hover {
 #unlockAllButton:hover {
   background: #eef1f4;
 }
+
+.app-description {
+  margin: -15px 0 15px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* ===== アプリヘッダー ===== */
+
+.app-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.app-logo {
+  width: 82px;
+  height: 82px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.app-title-area h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.app-description {
+  margin: 0 auto 14px;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.manage-link {
+  display: inline-block;
+  color: #53627c;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+}
+
+.manage-link:hover {
+  background-color: #eef1f4;
+}
+
+/* ===== 抽選結果 ===== */
+
+#result {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+/* 結果カード */
+.result-card {
+  position: relative;
+  background: #ffffff;
+  padding: 18px 20px;
+  border: 1px solid #e2e6ec;
+  border-radius: 14px;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(50, 65, 90, 0.06);
+}
+
+/* カテゴリ名 */
+.result-category {
+  margin-bottom: 6px;
+  color: #7a8493;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 引いたお題 */
+.result-theme {
+  color: #29313d;
+  font-size: 21px;
+  font-weight: bold;
+  padding-right: 90px;
+}
+
+/* 固定ボタン */
+.lock-button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+
+  margin: 0;
+  padding: 6px 10px;
+
+  background: #f1f3f6;
+  color: #596579;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.lock-button:hover {
+  background: #e5e9ef;
+}
+
+/* 固定したカード */
+.result-card.locked {
+  border: 2px solid #71809a;
+  background: #f8f9fb;
+}
+
+/* 固定中ボタン */
+.result-card.locked .lock-button {
+  background: #5b6f91;
+  color: white;
+}
+
+/* ===== 結果カードのレスポンシブ表示 ===== */
+
+/* PC・タブレット */
+#result {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* 画面が狭いとき */
+@media (max-width: 700px) {
+  #result {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app-note {
+  margin: 6px 0 10px;
+  color: #8a7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ===== 4カテゴリ抽選時は2×2 ===== */
+
+#result.four-results {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* スマホでは4カテゴリでも1列 */
+@media (max-width: 700px) {
+  #result.four-results {
+    grid-template-columns: 1fr;
+  }
+}
