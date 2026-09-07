@@ -146,7 +146,11 @@ const defaultThemes = [
   { text: "イブニングドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
   { text: "ウェディングドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
   { text: "マーメイドドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
-
+  { text: "エンパイアドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
+  { text: "Aラインドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
+  { text: "ミニドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
+  { text: "チュールドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
+  { text: "ステージドレス", category: "fashion", subcategory: "ドレス・華やか系", enabled: true, isDefault: true },
   // サブカル系
   { text: "ゴシック", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
   { text: "ゴシックロリータ", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
@@ -173,7 +177,13 @@ const defaultThemes = [
   { text: "バレエコア", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
   { text: "コケット", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
   { text: "モード系", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
-
+  { text: "サイバーゴス", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "フェアリーグランジ", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "ダークアカデミア", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "ライトアカデミア", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "サブカル地雷", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "ゴス", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
+  { text: "パステルゴス", category: "fashion", subcategory: "サブカル系", enabled: true, isDefault: true },
   // 民族・文化系
   { text: "中華風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
   { text: "チャイナドレス", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
@@ -198,6 +208,13 @@ const defaultThemes = [
   { text: "北欧民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
   { text: "東欧民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
   { text: "ウェスタン", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "モンゴル民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "チベット民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "ベトナム風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "タイ民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "スペイン民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "メキシコ民族衣装風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
+  { text: "スコットランド風", category: "fashion", subcategory: "民族・文化系", enabled: true, isDefault: true },
 
   // 現代・カジュアル系
   { text: "スポーティ", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
@@ -217,6 +234,12 @@ const defaultThemes = [
   { text: "アウトドア", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
   { text: "マリンルック", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
   { text: "リゾート", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "ミリタリー", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "ノームコア", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "シティボーイ風", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "韓国ストリート", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "古着MIX", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
+  { text: "スポーツユニフォーム風", category: "fashion", subcategory: "現代・カジュアル系", enabled: true, isDefault: true },
 
   // ファンタジー系
   { text: "勇者風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
@@ -241,6 +264,13 @@ const defaultThemes = [
   { text: "堕天使風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
   { text: "悪魔風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
   { text: "吸血鬼風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "狩人風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "盗賊風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "暗殺者風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "召喚士風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "死霊術師風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "ドラゴンライダー風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
+  { text: "妖精風", category: "fashion", subcategory: "ファンタジー系", enabled: true, isDefault: true },
 
   // SF・特殊系
   { text: "サイバーパンク", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
@@ -250,6 +280,10 @@ const defaultThemes = [
   { text: "アンドロイド風", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
   { text: "宇宙服アレンジ", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
   { text: "ポストアポカリプス", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
+  { text: "バイオパンク", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
+  { text: "ソーラーパンク", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
+  { text: "メカスーツ風", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
+  { text: "ホログラム衣装風", category: "fashion", subcategory: "SF・特殊系", enabled: true, isDefault: true },
 
   // 時代系
   { text: "中世ヨーロッパ風", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
@@ -261,6 +295,9 @@ const defaultThemes = [
   { text: "1980年代風", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
   { text: "昭和レトロ", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
   { text: "平成レトロ", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
+  { text: "バロック風", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
+  { text: "エドワーディアン", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
+  { text: "1960年代風", category: "fashion", subcategory: "時代系", enabled: true, isDefault: true },
 
   // =========================
   // 世界観
@@ -280,6 +317,18 @@ const defaultThemes = [
   { text: "星空", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
   { text: "月夜", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
   { text: "オーロラ", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "火山地帯", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "草原", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "湿地", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "ジャングル", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "竹林", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "紅葉の森", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "巨大樹の森", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "滝のある渓谷", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "湖畔", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "洞窟", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "鍾乳洞", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
+  { text: "珊瑚礁", category: "world", subcategory: "自然・風景", enabled: true, isDefault: true },
 
   // ファンタジー
   { text: "剣と魔法の世界", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
@@ -294,6 +343,21 @@ const defaultThemes = [
   { text: "おとぎ話の世界", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
   { text: "夢の世界", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
   { text: "鏡の世界", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "竜の王国", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "魔女の森", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "妖精の森", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "精霊の森", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "巨人の国", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "小人の国", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "人魚の王国", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "竜が棲む山", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "魔法使いの街", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "浮遊大陸", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "忘れられた神殿", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "神々の住む世界", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "巨大迷宮", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "魔法の森", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
+  { text: "空飛ぶ島々", category: "world", subcategory: "ファンタジー", enabled: true, isDefault: true },
 
   // ダーク
   { text: "廃墟", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
@@ -304,6 +368,18 @@ const defaultThemes = [
   { text: "永遠の夜", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
   { text: "ダークファンタジー", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
   { text: "吸血鬼の世界", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "霧に包まれた街", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "呪われた森", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "滅びた王都", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "廃墟の教会", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "地下墓地", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "死者の国", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "悪夢の世界", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "影だけが暮らす世界", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "魔物に支配された街", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "禁断の研究所", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "血の月が昇る世界", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
+  { text: "崩壊寸前の世界", category: "world", subcategory: "ダーク", enabled: true, isDefault: true },
 
   // SF・未来
   { text: "近未来", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
@@ -316,6 +392,18 @@ const defaultThemes = [
   { text: "アンドロイド社会", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
   { text: "ディストピア", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
   { text: "ユートピア", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "ネオン街", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "巨大企業に支配された都市", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "AIが統治する世界", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "ロボットだけが暮らす街", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "仮想現実世界", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "火星コロニー", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "月面基地", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "未知の惑星", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "銀河帝国", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "宇宙ステーション", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "時間旅行が可能な世界", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
+  { text: "文明崩壊後の未来都市", category: "world", subcategory: "SF・未来", enabled: true, isDefault: true },
 
   // 時代・場所
   { text: "中世", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
@@ -330,6 +418,24 @@ const defaultThemes = [
   { text: "サーカス", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
   { text: "図書館", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
   { text: "美術館", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "古代中国", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "古代エジプト", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "古代ギリシャ", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "古代ローマ", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "平安時代", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "江戸時代", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "大正時代", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "ヴィクトリア朝", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "西部開拓時代", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "中華街", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "港町", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "砂漠の交易都市", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "雪国の街", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "山岳都市", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "水上都市", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "地下都市", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "巨大な学園都市", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
+  { text: "眠らない繁華街", category: "world", subcategory: "時代・場所", enabled: true, isDefault: true },
 
   // イベント・特殊
   { text: "ハロウィン", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
@@ -341,6 +447,28 @@ const defaultThemes = [
   { text: "人形の国", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
   { text: "絵本の世界", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
   { text: "白昼夢", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "仮面舞踏会", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "夜の舞踏会", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "王国の戴冠式", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "盛大な結婚式", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "魔法学校の入学式", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "収穫祭", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "ランタン祭り", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "花祭り", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "星祭り", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "サーカス", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "移動遊園地", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "秘密のオークション", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "魔法大会", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "剣闘大会", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "世界の終末の日", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "永遠に夜が続く日", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "夢と現実が混ざる世界", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "百鬼夜行", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "月食の夜", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "建国記念祭", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "魔物の大行進", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
+  { text: "一年に一度だけ開く街", category: "world", subcategory: "イベント・特殊", enabled: true, isDefault: true },
 
   // =========================
   // モチーフ
@@ -365,6 +493,11 @@ const defaultThemes = [
   { text: "波", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
   { text: "泡", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
   { text: "風", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
+  { text: "三日月", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
+  { text: "日食", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
+  { text: "氷柱", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
+  { text: "彗星", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
+  { text: "朝焼け", category: "motif", subcategory: "自然・天体", enabled: true, isDefault: true },
 
   // 植物
   { text: "花", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
@@ -382,6 +515,11 @@ const defaultThemes = [
   { text: "蔦", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
   { text: "葉", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
   { text: "キノコ", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
+  { text: "紫陽花", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
+  { text: "牡丹", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
+  { text: "菊", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
+  { text: "藤袴", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
+  { text: "四つ葉のクローバー", category: "motif", subcategory: "植物", enabled: true, isDefault: true },
 
   // 生き物
   { text: "猫", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
@@ -404,6 +542,12 @@ const defaultThemes = [
   { text: "魚", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
   { text: "金魚", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
   { text: "クラゲ", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "鯨", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "イルカ", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "鮫", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "フクロウ", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "蝙蝠", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
+  { text: "蛙", category: "motif", subcategory: "生き物", enabled: true, isDefault: true },
 
   // 食べ物・飲み物
   { text: "苺", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
@@ -418,6 +562,12 @@ const defaultThemes = [
   { text: "マカロン", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
   { text: "紅茶", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
   { text: "コーヒー", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "オレンジ", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "スイカ", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "クリームソーダ", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "ドーナツ", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "カップケーキ", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
+  { text: "プリン", category: "motif", subcategory: "食べ物・飲み物", enabled: true, isDefault: true },
 
   // アイテム
   { text: "鍵", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
@@ -434,6 +584,10 @@ const defaultThemes = [
   { text: "トランプ", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
   { text: "チェス", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
   { text: "音符", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
+  { text: "宝箱", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
+  { text: "懐中時計", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
+  { text: "仮面", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
+  { text: "鳥籠", category: "motif", subcategory: "アイテム", enabled: true, isDefault: true },
 
   // 宝石・装飾
   { text: "宝石", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
@@ -449,6 +603,10 @@ const defaultThemes = [
   { text: "リボン", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
   { text: "レース", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
   { text: "鎖", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
+  { text: "オパール", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
+  { text: "ガーネット", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
+  { text: "トパーズ", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
+  { text: "ペリドット", category: "motif", subcategory: "宝石・装飾", enabled: true, isDefault: true },
 
   // 幻想・魔法
   { text: "天使の羽", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
@@ -461,6 +619,10 @@ const defaultThemes = [
   { text: "魔導書", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
   { text: "錬金術", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
   { text: "人魚", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
+  { text: "魔法の鏡", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
+  { text: "魔法薬", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
+  { text: "使い魔", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
+  { text: "妖精の羽", category: "motif", subcategory: "幻想・魔法", enabled: true, isDefault: true },
 
   // 記号・図形
   { text: "ハート", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
@@ -473,6 +635,10 @@ const defaultThemes = [
   { text: "ストライプ", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
   { text: "チェック", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
   { text: "水玉", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
+  { text: "星型", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
+  { text: "ダイヤ柄", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
+  { text: "六角形", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
+  { text: "渦巻き", category: "motif", subcategory: "記号・図形", enabled: true, isDefault: true },
 
   // =========================
   // 追加縛り
@@ -491,6 +657,11 @@ const defaultThemes = [
   { text: "白をメインカラーにする", category: "rule", subcategory: "色", enabled: true, isDefault: true },
   { text: "黒をメインカラーにする", category: "rule", subcategory: "色", enabled: true, isDefault: true },
   { text: "元キャラのメインカラーを使わない", category: "rule", subcategory: "色", enabled: true, isDefault: true },
+  { text: "補色を組み合わせる", category: "rule", subcategory: "色", enabled: true, isDefault: true },
+  { text: "同系色だけでまとめる", category: "rule", subcategory: "色", enabled: true, isDefault: true },
+  { text: "金色をアクセントに使う", category: "rule", subcategory: "色", enabled: true, isDefault: true },
+  { text: "銀色をアクセントに使う", category: "rule", subcategory: "色", enabled: true, isDefault: true },
+  { text: "グラデーションを取り入れる", category: "rule", subcategory: "色", enabled: true, isDefault: true },
 
   // シルエット
   { text: "左右非対称にする", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
@@ -503,6 +674,11 @@ const defaultThemes = [
   { text: "ショート丈を取り入れる", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
   { text: "大きな袖を取り入れる", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
   { text: "腰まわりを強調する", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
+  { text: "Aラインのシルエットにする", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
+  { text: "逆三角形のシルエットにする", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
+  { text: "裾に向かって大きく広げる", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
+  { text: "肩まわりを強調する", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
+  { text: "縦長のシルエットを意識する", category: "rule", subcategory: "シルエット", enabled: true, isDefault: true },
 
   // 素材
   { text: "透明素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
@@ -513,6 +689,11 @@ const defaultThemes = [
   { text: "光沢のある素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
   { text: "マットな素材を中心にする", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
   { text: "異なる素材を3種類以上組み合わせる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
+  { text: "デニム素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
+  { text: "ニット素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
+  { text: "ベルベット素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
+  { text: "シースルー素材を取り入れる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
+  { text: "異素材の切り替えを目立たせる", category: "rule", subcategory: "素材", enabled: true, isDefault: true },
 
   // 装飾
   { text: "リボンを必ず入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
@@ -524,6 +705,11 @@ const defaultThemes = [
   { text: "花飾りを取り入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
   { text: "タッセルを取り入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
   { text: "装飾を極力減らす", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
+  { text: "パールを取り入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
+  { text: "ボタンを目立つ装飾として使う", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
+  { text: "ブローチを取り入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
+  { text: "羽飾りを取り入れる", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
+  { text: "紐やコードを装飾に使う", category: "rule", subcategory: "装飾", enabled: true, isDefault: true },
 
   // パーツ
   { text: "帽子を必ず入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
@@ -536,6 +722,11 @@ const defaultThemes = [
   { text: "コルセットを取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
   { text: "ネクタイまたはリボンタイを入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
   { text: "大きなアクセサリーを1つ入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
+  { text: "付け襟を取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
+  { text: "ハイネックを取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
+  { text: "アームカバーを取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
+  { text: "サスペンダーを取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
+  { text: "腰飾りを取り入れる", category: "rule", subcategory: "パーツ", enabled: true, isDefault: true },
 
   // デザインルール
   { text: "肌見せを極力なくす", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
@@ -558,6 +749,13 @@ const defaultThemes = [
   { text: "高級感を重視する", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
   { text: "かわいさより格好良さを重視する", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
   { text: "格好良さよりかわいさを重視する", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "円形のデザインを多く取り入れる", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "三角形のデザインを多く取り入れる", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "一部分だけ極端に大きくする", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "左右で色の配置を変える", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "柄を2種類以上組み合わせる", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+  { text: "モチーフを服の形そのものに取り入れる", category: "rule", subcategory: "デザインルール", enabled: true, isDefault: true },
+
 ];
 
 // 保存済みのお題を読み込む
