@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amisato0333.github.io/theme-lottery-app/sitemap.xml
