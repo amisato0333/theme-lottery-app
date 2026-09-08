@@ -786,3 +786,156 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== お題くじの使い方 ===== */
+
+.how-to-use {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #e1e5eb;
+}
+
+.how-to-use h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 22px;
+}
+
+.how-to-step {
+  background: #ffffff;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+}
+
+.how-to-step h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #29313d;
+}
+
+.how-to-step p {
+  margin: 0;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===== このサイトについて ===== */
+
+.about-site {
+  margin-top: 50px;
+  padding: 28px 24px;
+  background: #ffffff;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+}
+
+.about-site h2 {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 22px;
+  color: #29313d;
+}
+
+.about-site p {
+  margin: 0 0 12px;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-site p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== プライバシーポリシー ===== */
+
+.privacy-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.privacy-page h1 {
+  text-align: center;
+  margin: 0 0 32px;
+  color: #29313d;
+}
+
+.privacy-page h2 {
+  margin: 32px 0 12px;
+  font-size: 18px;
+  color: #29313d;
+}
+
+.privacy-page p {
+  margin: 0 0 14px;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.privacy-page a {
+  color: #53627c;
+}
+
+/* ===== フッター ===== */
+
+.site-footer {
+  margin-top: 60px;
+  padding: 24px 20px;
+  text-align: center;
+  border-top: 1px solid #e1e5eb;
+  color: #8a929e;
+  font-size: 13px;
+}
+
+.site-footer a {
+  color: #53627c;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer p {
+  margin: 8px 0 0;
+}
+
+/* ===== フッター ===== */
+
+.site-footer {
+  margin-top: 60px;
+  padding: 24px 16px;
+  text-align: center;
+  color: #7a8391;
+  font-size: 13px;
+}
+
+.site-footer a {
+  color: #5b6f91;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #9aa1ab;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    line-height: 2;
+  }
+}
