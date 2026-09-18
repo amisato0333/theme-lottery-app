@@ -214,6 +214,63 @@ a:hover {
   text-decoration: underline;
 }
 
+/* =========================
+   お題管理リンク
+========================= */
+
+.manage-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin: 22px 0 30px;
+  padding: 16px 18px;
+
+  background: #fff7f2;
+  border: 2px solid #53627c;
+  border-radius: 14px;
+
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.manage-link:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.manage-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.manage-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.manage-text strong {
+  font-size: 16px;
+  color: #53627c;
+}
+
+.manage-text small {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.manage-arrow {
+  font-size: 22px;
+  font-weight: bold;
+  color: #53627c;
+}
+
 
 /* =========================
    カテゴリ選択

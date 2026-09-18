@@ -7,6 +7,18 @@ const categoryCheckboxes = document.querySelectorAll(".draw-category");
 // 保存されているお題を読み込む
 let themes = JSON.parse(localStorage.getItem("themes")) || [];
 
+// 初めてサイトを開いた人には、初期お題をすべて登録する
+if (themes.length === 0) {
+  themes = defaultThemes.map(function (theme) {
+    return {
+      ...theme,
+      enabled: true
+    };
+  });
+
+  localStorage.setItem("themes", JSON.stringify(themes));
+}
+
 const lockedResults = {};
 
 // お題を引く
