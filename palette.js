@@ -2,6 +2,10 @@ const paletteButton = document.getElementById("paletteButton");
 const paletteType = document.getElementById("paletteType");
 const colorPreviews = document.querySelectorAll(".color-preview");
 const colorCodes = document.querySelectorAll(".palette-color span");
+const paletteLockButtons = document.querySelectorAll(".palette-lock-button");
+
+// 5色それぞれの固定状態
+const lockedColors = [false, false, false, false, false];
 
 
 // ランダムな整数を作る
@@ -63,6 +67,11 @@ paletteButton.addEventListener("click", function () {
     const baseHue = randomNumber(0, 359);
 
     for (let i = 0; i < 5; i++) {
+
+        // 固定されている色は引き直さない
+        if (lockedColors[i]) {
+            continue;
+        }
 
         let hue;
         let saturation;
@@ -200,6 +209,32 @@ colorCodes.forEach(function (code) {
             }, 1000);
 
         });
+
+    });
+
+});
+
+// 色を固定・固定解除
+paletteLockButtons.forEach(function (button, index) {
+
+    button.addEventListener("click", function () {
+
+        // まだ色を生成していない場合は固定しない
+        if (colorCodes[index].textContent === "#------") {
+            return;
+        }
+
+        lockedColors[index] = !lockedColors[index];
+
+        if (lockedColors[index]) {
+            button.textContent = "🔒";
+            button.classList.add("locked");
+            colorPreviews[index].classList.add("locked");
+        } else {
+            button.textContent = "🔓";
+            button.classList.remove("locked");
+            colorPreviews[index].classList.remove("locked");
+        }
 
     });
 
