@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>カラーパレットくじ｜お題くじ</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icons/icon-192.png">
+
+    <meta name="theme-color" content="#53627c">
+
+    <meta name="description" content="イラストやキャラクターデザインに使える配色をランダムに生成できる無料カラーパレットくじです。">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="app-header">
+
+            <a href="index.html">← お題くじに戻る</a>
+
+            <div class="app-title-area">
+                <h1>🎨 カラーパレットくじ</h1>
+
+                <p class="app-description">
+                    イラストやキャラクターデザインに使える<br>
+                    カラーパレットをランダムに生成します。
+                </p>
+            </div>
+
+        </header>
+
+
+        <section class="palette-area">
+
+            <h2>パレットの雰囲気</h2>
+
+            <select id="paletteType">
+                <option value="random">完全ランダム</option>
+                <option value="pastel">パステル</option>
+                <option value="vivid">ビビッド</option>
+                <option value="dark">ダーク</option>
+                <option value="muted">くすみカラー</option>
+
+                <option value="analogous">類似色</option>
+                <option value="complementary">補色</option>
+                <option value="triadic">トライアド</option>
+            </select>
+
+            <button id="paletteButton">
+                カラーパレットを作る
+            </button>
+
+
+            <div id="paletteResult">
+
+                <div class="palette-color">
+                    <div class="color-preview"></div>
+                    <span>#------</span>
+                </div>
+
+                <div class="palette-color">
+                    <div class="color-preview"></div>
+                    <span>#------</span>
+                </div>
+
+                <div class="palette-color">
+                    <div class="color-preview"></div>
+                    <span>#------</span>
+                </div>
+
+                <div class="palette-color">
+                    <div class="color-preview"></div>
+                    <span>#------</span>
+                </div>
+
+                <div class="palette-color">
+                    <div class="color-preview"></div>
+                    <span>#------</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="palette.js"></script>
+
+</body>
+
+</html>

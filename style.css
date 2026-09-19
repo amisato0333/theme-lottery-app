@@ -1068,3 +1068,85 @@ a:hover {
   font-size: 14px;
   line-height: 1.8;
 }
+
+/* =========================
+   カラーパレットくじ
+========================= */
+
+.palette-area {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#paletteType {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0 16px;
+
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+
+  color: #29313d;
+  font-size: 15px;
+}
+
+#paletteButton {
+  width: 100%;
+  padding: 15px;
+
+  background: #53627c;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#paletteResult {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 28px;
+
+  overflow: hidden;
+  border-radius: 14px;
+
+  background: white;
+  border: 1px solid #e1e5eb;
+}
+
+.palette-color {
+  background: white;
+  text-align: center;
+}
+
+.color-preview {
+  height: 150px;
+  background: #eeeeee;
+}
+
+.palette-color span {
+  display: block;
+  padding: 12px 4px;
+
+  color: #4d5560;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+@media (max-width: 600px) {
+
+  #paletteResult {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .color-preview {
+    height: 110px;
+  }
+
+  .palette-color span {
+    font-size: 10px;
+  }
+}
