@@ -1,12 +1,17 @@
-const CACHE_NAME = "odai-kuji-cache";
+const CACHE_NAME = "odai-kuji-cache-v2";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./manage.html",
+  "./palette.html",
+  "./about.html",
+  "./privacy.html",
+  "./contact.html",
   "./style.css",
   "./script.js",
   "./manage.js",
+  "./palette.js",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
