@@ -1359,3 +1359,54 @@ a:hover {
   }
 
 }
+
+/* お題くじの活用アイデア */
+.idea-examples {
+  margin-top: 60px;
+}
+
+.idea-examples h2 {
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 22px;
+  color: #29313d;
+}
+
+.idea-examples-intro {
+  max-width: 650px;
+  margin: 0 auto 24px;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.idea-example-card {
+  margin-bottom: 14px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+}
+
+.idea-example-card h3 {
+  margin: 0 0 10px;
+  color: #29313d;
+  font-size: 16px;
+}
+
+.idea-example-card p {
+  margin: 0;
+  color: #687180;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .idea-examples {
+    margin-top: 45px;
+  }
+
+  .idea-example-card {
+    padding: 18px;
+  }
+}
